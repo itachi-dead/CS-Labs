@@ -104,7 +104,7 @@ void PlayerTurn()
 
 void ComputerTurn()
 {
-	//searching for computer moves
+	//searching for computer moves (O move)
 	var possibleMoves = new List<(int X, int Y)>();
 	for (int i = 0; i < 3; i++)
 	{
