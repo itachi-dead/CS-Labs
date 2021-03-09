@@ -1,0 +1,13 @@
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\bin\Debug\netcoreapp3.1\lab2_task3.exe
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\bin\Debug\netcoreapp3.1\lab2_task3.deps.json
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\bin\Debug\netcoreapp3.1\lab2_task3.runtimeconfig.json
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\bin\Debug\netcoreapp3.1\lab2_task3.runtimeconfig.dev.json
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\bin\Debug\netcoreapp3.1\lab2_task3.dll
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\bin\Debug\netcoreapp3.1\lab2_task3.pdb
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.AssemblyInfoInputs.cache
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.AssemblyInfo.cs
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.csproj.CoreCompileInputs.cache
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.dll
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.pdb
+C:\Users\kR9\Source\Repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.genruntimeconfig.cache
+C:\Users\kR9\source\repos\CS-Labs\lab2_task3\lab2_task3\obj\Debug\netcoreapp3.1\lab2_task3.csprojAssemblyReference.cache

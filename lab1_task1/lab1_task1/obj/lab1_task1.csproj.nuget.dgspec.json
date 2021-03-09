@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kR9\\Source\\Repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj": {}
+    "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kR9\\Source\\Repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj": {
+    "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kR9\\Source\\Repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj",
+        "projectUniqueName": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj",
         "projectName": "lab1_task1",
-        "projectPath": "C:\\Users\\kR9\\Source\\Repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj",
+        "projectPath": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab1_task1\\lab1_task1\\lab1_task1.csproj",
         "packagesPath": "C:\\Users\\kR9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kR9\\Source\\Repos\\CS-Labs\\lab1_task1\\lab1_task1\\obj\\",
+        "outputPath": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab1_task1\\lab1_task1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kR9\\AppData\\Roaming\\NuGet\\NuGet.Config",
