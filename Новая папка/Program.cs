@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace lab2_task2
+namespace lab2_task2test
 {
     class Program
     {
