@@ -13,10 +13,12 @@ namespace lab3
             counter++;
             Id = counter;
         }
+
         public ALU(string name)
         {
 
         }
+
         public int Id
         {
             get;
@@ -61,12 +63,59 @@ namespace lab3
             }
             return found? "Succesfully removed" :"there is no such an Id";
         }
+
         public void Change(ALU i ,List<ALU>a)
         {
             for (int j = i.Id - 1; j < a.Count; j++)
             {
                 a[j].Id--;
             }
+            counter--;
         }
+
+        //
+        public override bool Equals(object obj)
+        {
+            return obj is ALU aLU &&
+                   Id == aLU.Id &&
+                   Name == aLU.Name &&
+                   Brand == aLU.Brand;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Name, Brand);
+        }
+        //override of ==
+        public static bool operator ==(ALU c1, ALU c2)
+        {
+            return c1.Name.Equals(value: c2.Name);
+        }
+        public static bool operator !=(ALU c1, ALU c2)
+        {
+            return !c1.Name.Equals(value: c2.Name);
+        }
+        public static bool operator ==(ALU c1, string c2)
+        {
+            return c1.Name.Equals(c2);
+        }
+        public static bool operator !=(ALU c1, string c2)
+        {
+            return !c1.Name.Equals(c2);
+        }
+
+        /*public override bool Equals(Object obj)
+        {
+            //Check for null and compare run-time types.
+            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {
+                ALU p = (ALU)obj;
+                return p.Name.Equals(Name);
+            }
+        }*/
     }
 }

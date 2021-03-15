@@ -48,7 +48,7 @@ namespace lab3
                         string Id = "";
                         Id = Console.ReadLine();
                         ALU searching = new ALU("no counter");
-                        if(searching.FindAndRemove(Id , proccsesors).Equals("Succesfully removed"))
+                        if(searching.FindAndRemove(Id , proccsesors) == "Succesfully removed")
                         {
                             Console.WriteLine("Succesfully removed");
                         }
