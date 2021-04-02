@@ -6,12 +6,13 @@ namespace lab3
 {
     class Plane
     {
-        static protected int counter = 0;
+        static public int counter = 0;
         public Plane()
         {
             Type = "";
             Name = "";
         }
+        
         public int Id { get; set; }
         public string Type { get; set; }
         public string Name { get; set; }

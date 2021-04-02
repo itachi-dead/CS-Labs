@@ -13,5 +13,6 @@ namespace lab3
             Type = "Cargo";
             this.Name = name;
         }
+
     }
 }
