@@ -1,0 +1,12 @@
+D:\lab\isp\lab4_task2\lab4_task2\bin\Debug\lab4_task2.exe
+D:\lab\isp\lab4_task2\lab4_task2\bin\Debug\lab4_task2.pdb
+D:\lab\isp\lab4_task2\lab4_task2\obj\Debug\lab4_task2.csprojAssemblyReference.cache
+D:\lab\isp\lab4_task2\lab4_task2\obj\Debug\lab4_task2.csproj.CoreCompileInputs.cache
+D:\lab\isp\lab4_task2\lab4_task2\obj\Debug\lab4_task2.exe
+D:\lab\isp\lab4_task2\lab4_task2\obj\Debug\lab4_task2.pdb
+C:\Users\kR9\Desktop\lab4_task2\lab4_task2\bin\Debug\lab4_task2.exe
+C:\Users\kR9\Desktop\lab4_task2\lab4_task2\bin\Debug\lab4_task2.pdb
+C:\Users\kR9\Desktop\lab4_task2\lab4_task2\obj\Debug\lab4_task2.csprojAssemblyReference.cache
+C:\Users\kR9\Desktop\lab4_task2\lab4_task2\obj\Debug\lab4_task2.csproj.CoreCompileInputs.cache
+C:\Users\kR9\Desktop\lab4_task2\lab4_task2\obj\Debug\lab4_task2.exe
+C:\Users\kR9\Desktop\lab4_task2\lab4_task2\obj\Debug\lab4_task2.pdb
