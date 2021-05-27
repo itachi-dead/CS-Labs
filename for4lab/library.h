@@ -1,6 +1,6 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
-
+extern "C" __declspec(dllexport) __stdcall int abs(int a);
 extern "C" __declspec(dllexport) __fastcall int sum(int a, int b);
 extern "C" __declspec(dllexport) __fastcall int sub(int a, int b);
 extern "C" __declspec(dllexport) __cdecl unsigned factorial(int a);
