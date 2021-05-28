@@ -1,0 +1,13 @@
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\bin\x64\Debug\netcoreapp3.1\WorkWithLib.exe
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\bin\x64\Debug\netcoreapp3.1\WorkWithLib.deps.json
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\bin\x64\Debug\netcoreapp3.1\WorkWithLib.runtimeconfig.json
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\bin\x64\Debug\netcoreapp3.1\WorkWithLib.runtimeconfig.dev.json
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\bin\x64\Debug\netcoreapp3.1\WorkWithLib.dll
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\bin\x64\Debug\netcoreapp3.1\WorkWithLib.pdb
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.csprojAssemblyReference.cache
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.AssemblyInfoInputs.cache
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.AssemblyInfo.cs
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.csproj.CoreCompileInputs.cache
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.dll
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.pdb
+C:\Users\HUAWEI\source\repos\WorkWithLib\WorkWithLib\obj\x64\Debug\netcoreapp3.1\WorkWithLib.genruntimeconfig.cache

@@ -1,0 +1,26 @@
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.exe
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.deps.json
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.runtimeconfig.json
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.runtimeconfig.dev.json
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.dll
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.pdb
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.csprojAssemblyReference.cache
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.AssemblyInfoInputs.cache
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.AssemblyInfo.cs
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.csproj.CoreCompileInputs.cache
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.dll
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.pdb
+C:\Users\HUAWEI\source\repos\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.genruntimeconfig.cache
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.exe
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.deps.json
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.runtimeconfig.json
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.runtimeconfig.dev.json
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.dll
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\bin\Debug\netcoreapp3.1\KeyLogger.pdb
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.csprojAssemblyReference.cache
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.AssemblyInfoInputs.cache
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.AssemblyInfo.cs
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.csproj.CoreCompileInputs.cache
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.dll
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.pdb
+C:\Users\HUAWEI\OneDrive\Рабочий стол\ISP-labs\lab4\Task 1\KeyLogger\KeyLogger\obj\Debug\netcoreapp3.1\KeyLogger.genruntimeconfig.cache
