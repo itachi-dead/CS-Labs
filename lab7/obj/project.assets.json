@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab4_Task 2\\WorkWithLib\\WorkWithLib.csproj",
-      "projectName": "WorkWithLib",
-      "projectPath": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab4_Task 2\\WorkWithLib\\WorkWithLib.csproj",
+      "projectUniqueName": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab7\\7.csproj",
+      "projectName": "7",
+      "projectPath": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab7\\7.csproj",
       "packagesPath": "C:\\Users\\kR9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab4_Task 2\\WorkWithLib\\obj\\",
+      "outputPath": "C:\\Users\\kR9\\source\\repos\\CS-Labs\\lab7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kR9\\AppData\\Roaming\\NuGet\\NuGet.Config",
