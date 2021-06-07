@@ -30,7 +30,7 @@ namespace lab3
         }
         public bool IfBombMarkCorrect(string mark)
         {
-            for(int i =1; i <= 5; i++)
+            for(int i =0; i < 5; i++)
             {
                 if(mark.Equals(i.ToString()))
                 {

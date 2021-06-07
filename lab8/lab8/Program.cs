@@ -1,136 +1,192 @@
-﻿using lab6.Model;
-using lab8.NotificationsAndLogs;
+﻿using lab8.Exceptions;
+using lab6.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace lab3
 {
     class Program
     {
-        delegate void ChoiceWhatToDo(string key, Validator check, List<Plane> planes);
-        static void Main(string[] args)
+
+        private readonly List<Plane> planes;
+        private bool stop;
+        private readonly Validator validator;
+
+        private delegate void HandleException(Exception e);
+        private event HandleException NotifyException;
+
+        private Program()
         {
-            bool stop = false;
-            List<Plane> planes = new List<Plane>();
-            string n = "";
-            Validator check = new Validator();
-            ChoiceWhatToDo choice = FirstChoice;
-            choice += SecondChoice;
-            choice += ThirdChoice;
-            choice += ForthChoice;
-            choice += ExitChoice;
+            this.planes = new List<Plane>();
+            this.stop = false;
+            this.validator = new Validator();
+
+            if (!File.Exists("Log.txt"))
+            {
+                File.Create("Log.txt");
+            }
+
+            NotifyException += delegate (Exception e)
+            {
+                string logData = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss") + " - Exception occured: " + e + "\n";
+                File.AppendAllText("Log.txt", logData);
+            };
+
+            NotifyException += (Exception e) => Console.WriteLine(DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss") + " - Exception occured: " + e + "\n");
+        }
+   
+
+        private void Run()
+        {
+            
+
             while (!stop)
             {
-                Console.WriteLine("Enter 1 if u want to add plane");
-                Console.WriteLine("Enter 2 if u want to see short list of planes");
-                Console.WriteLine("Enter 3 if u want to see full list of planes");
-                Console.WriteLine("Enter 4 if u want to fly to any country");
-                Console.WriteLine("Enter 0 if u want to exit");
-                n = Console.ReadLine();
-                Notify.NoticeMeSenpai("123");
-                choice(n, check, planes);
-                Console.WriteLine();
-            }
+                PrintMenu();
+                string choice = Console.ReadLine();
 
-            static void FirstChoice(string key, Validator check , List<Plane> planes)
-            {
-                if (key == "1")
+                try
                 {
-                    Console.WriteLine("What plane do u want ot add 1)cargo or 2)passenger: ");
-                    string temp = Console.ReadLine();
-
-                    while (!check.IfCorrectChoice(temp))
+                    switch (choice)
                     {
+                        case "1":
+                            AddPlane();
+                            break;
 
-                        temp = Console.ReadLine();
-                    }//check
+                        case "2":
+                            PrintPlanes();
+                            break;
 
-                    Console.WriteLine("Enter name of the plane:");
-                    string name = Console.ReadLine();
+                        case "3":
+                            PrintTypes();
+                            break;
 
-                    if (temp.Equals("1"))
-                    {
-                        Console.WriteLine("Do u want to create Millitary plane 1)yes 2)no:");
-                        string millitary = Console.ReadLine();
+                        case "4":
 
-                        while (!check.IfCorrectChoice(millitary))
-                        {
-                            Console.WriteLine("No correct option, try again");
-                            millitary = Console.ReadLine();
-                        }//check
+                            PrintPlanes();
+                            FlyPlanes();
+                            break;
 
-                        if (millitary.Equals("1"))//Milliytary
-                        {
-                            MillitaryPlane a = new MillitaryPlane(name, 0);
-                            planes.Add(a);
-                            Notify.NoticeMeSenpai("Millitary");
+                        case "0":
+                            stop = true;
+                            break;
 
-                        }
-                        else//Cargo
-                        {
-                            Console.WriteLine("Enter maximum weight that this plane can handle\n");
-                            string stringWeight = Console.ReadLine();
-                            int weight = 0;
-                            while (!Int32.TryParse(stringWeight, out weight))
-                            {
-                                Console.WriteLine("Try again");
-                                stringWeight = Console.ReadLine();
-                            }
-                            CargoPlane a = new CargoPlane(name, weight);
-                            planes.Add(a);
-                            Notify.NoticeMeSenpai("Cargo");
-                        }
+                        default:
+                            Console.WriteLine("No such choice");
+                            break;
                     }
-                    else
-                    {
-                        PassengerPlane a = new PassengerPlane(name);
-                        planes.Add(a);
-                        Notify.NoticeMeSenpai("Passenger");
+                    Console.WriteLine();
 
+                } 
+                catch (Exception e)
+                {
+                    NotifyException?.Invoke(e);
+                }
+            }
+        }
+
+        private void PrintTypes()
+        {
+            foreach (IPrint plane in planes)
+            {
+                plane.PrintType();
+            }
+        }
+
+        private void PrintPlanes()
+        {
+            foreach (IPrint plane in planes)
+            {
+                plane.Print();
+            }
+        }
+
+        private static void PrintMenu()
+        {
+            Console.WriteLine("Enter 1 if u want to add plane");
+            Console.WriteLine("Enter 2 if u want to see short list of planes");
+            Console.WriteLine("Enter 3 if u want to see full list of planes");
+            Console.WriteLine("Enter 4 if u want to fly to any country");
+        }
+
+
+        private void AddPlane()
+        {
+
+
+            Console.WriteLine("What plane do u want ot add 1)cargo or 2)passenger: ");
+            string temp = Console.ReadLine();
+
+            while (!validator.IfCorrectChoice(temp))
+            {
+
+                temp = Console.ReadLine();
+            }//check
+
+            Console.WriteLine("Enter name of the plane:");
+            string name = Console.ReadLine();
+
+            if (temp.Equals("1"))
+            {
+                Console.WriteLine("Do u want to create Millitary plane 1)yes 2)no:");
+                string millitary = Console.ReadLine();
+
+                while (!validator.IfCorrectChoice(millitary))
+                {
+                    Console.WriteLine("No correct option, try again");
+                    millitary = Console.ReadLine();
+                }//check
+
+                if (millitary.Equals("1"))//Milliytary
+                {
+                    MillitaryPlane a = new MillitaryPlane(name, 0);
+                    planes.Add(a);
+                }
+                else//Cargo
+                {
+                    Console.WriteLine("Enter maximum weight that this plane can handle\n");
+                    string stringWeight = Console.ReadLine();
+                    int weight = 0;
+                    while (!Int32.TryParse(stringWeight, out weight))
+                    {
+                        Console.WriteLine("Try again");
+                        stringWeight = Console.ReadLine();
                     }
+                    CargoPlane a = new CargoPlane(name, weight);
+                    planes.Add(a);
                 }
             }
-            static void SecondChoice(string key, Validator check, List<Plane> planes)
+            else
             {
-                if(key == "2")
-                foreach (IPrint plane in planes)
-                {
-                    plane.Print();
-                }
+                PassengerPlane a = new PassengerPlane(name);
+                planes.Add(a);
             }
-            static void ThirdChoice(string key, Validator check, List<Plane> planes)
+        }
+
+        private void FlyPlanes()
+        {
+
+            Console.WriteLine("Enter id of plane u want to fly:");
+            string Id = Console.ReadLine();
+            if (!validator.IfIdCorrect(Id, planes))
             {
-                if(key == "3")
-                foreach (IPrint plane in planes)
-                {
-                    plane.PrintType();
-                }
-            }
-            static void ForthChoice(string key, Validator check, List<Plane> planes)
-            {
-                if (key == "4")
-                {
-                    foreach (IPrint plane in planes)
-                    {
-                        plane.Print();
-                    }
+                Console.WriteLine("No such an Id");
+                throw new PlaneNotFoundException("Plane with id " + Id + " not found");
+     
+            }//check with break
 
-                    Console.WriteLine("Enter id of plane u want to fly:");
-                    string Id = Console.ReadLine();
-                    if (!check.IfIdCorrect(Id, planes))
-                    {
-                        Console.WriteLine("No such an Id");
-                        return;
-                    }//check with break
+            Console.WriteLine("Enter country u want to fly:");
+            string country = Console.ReadLine();
 
-                    Console.WriteLine("Enter country u want to fly:");
-                    string country = Console.ReadLine();
+            IPrint IPlane = planes[Int32.Parse(Id) - 1];
+            IPlane.Fly(country);
+        }
 
-                    IPrint IPlane = planes[Int32.Parse(Id) - 1];
-                    IPlane.Fly(country);
-                }
-            }
-            static void ExitChoice(string key, Validator check, List<Plane> planes) { if (key == "0") Environment.Exit(0); }
+
+        static void Main(string[] args)
+        {
+            new Program().Run();
         }
     }
 }
